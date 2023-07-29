@@ -1,0 +1,18 @@
+@mixin font-face($font-family, $url, $font-weight, $font-style: normal) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("#{$url}.woff") format("woff");
+    font-weight: #{$font-weight};
+    font-style: #{$font-style};
+  }
+}
+
+@mixin gradient($degs, $first-color, $second-color) {
+  background-image: linear-gradient(#{$degs}deg, $first-color, $second-color);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}

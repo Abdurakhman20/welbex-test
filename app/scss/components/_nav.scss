@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  padding: 0;
+}
+.nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav__link {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav__link {
+    font-size: 1.4rem;
+  }
+  .nav__item:last-child {
+    display: none;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 16px;
+  }
+}

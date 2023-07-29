@@ -1,0 +1,17 @@
+// ABSTRACT
+@import "./abstract/variables";
+@import "./abstract/mixins";
+//BASE
+@import "./base/normalize";
+@import "./base/base";
+@import "./base/fonts";
+// LAYOUTS
+@import "./layouts/container";
+@import "./layouts/columns";
+
+//COMPONENTS
+@import "./components/header";
+@import "./components/nav";
+@import "./components/main-section";
+@import "./components/sotials";
+@import "./components/footer";
